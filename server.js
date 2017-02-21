@@ -5,17 +5,29 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var hometemp = { 
-    title:' Home | Dinesh Kumar',
-    heading:'Home',
-    date:'July 6, 1996',
-    content:
+var articles = {
+     hometemp : { 
+       title:' Home | Dinesh Kumar',
+       heading:'Home',
+       date:'July 6, 1996',
+       content:
           `<p>This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!
-          </p>
-          <p>This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!
-          </p>
-          <p>This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!
           </p>`
+          
+                },
+     abouttemp : { title:' About | Dinesh Kumar',
+       heading:'About',
+       date:'July 6, 1996',
+       content:
+          `<p>This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!
+          </p>` },
+     contacttemp : { 
+       title:' Contact | Dinesh Kumar',
+       heading:'Contact',
+       date:'July 6, 1996',
+       content:
+          `<p>This is content of the article where you will be finding everything!This is content of the article where you will be finding everything!This is thing!
+          </p>`},
 };
 function createTemplate (data) { 
     var title = data.title;
