@@ -23,6 +23,7 @@ body {
  .container {
                  max-width: 1000px;
                  margin: 0 auto;
+                 text-align: center;
                  color: #cc6c17;
                  font-family: cursive;
                  padding-top: 80px;
